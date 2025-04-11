@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <defs>
+    <!-- 漸層背景 -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1c2c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a2c3c;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 發光效果 -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" in="SourceAlpha"/>
+      <feOffset dx="0" dy="0"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.6"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- 箭頭樣式 -->
+    <marker id="arrowhead" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+      <polygon points="0 0, 6 2, 0 4" fill="#ffd700"/>
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="960" height="540" fill="url(#bgGradient)"/>
+
+  <!-- 標題 -->
+  <text x="480" y="40" font-family="Microsoft JhengHei" font-size="24" fill="#ffd700" text-anchor="middle" filter="url(#glow)">
+    蘇丹的遊戲 - 結局解鎖流程圖
+  </text>
+
+  <!-- 中心圓環 -->
+  <circle cx="480" cy="270" r="180" fill="none" stroke="#ffd700" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- 第一周目 - 忠誠之路（右上） -->
+  <g transform="translate(650, 170)">
+    <circle cx="0" cy="0" r="60" fill="rgba(255,215,0,0.1)" stroke="#ffd700" stroke-width="1.5"/>
+    <text x="0" y="-15" font-family="Microsoft JhengHei" font-size="14" fill="#ffd700" text-anchor="middle">第一周目</text>
+    <text x="0" y="10" font-family="Microsoft JhengHei" font-size="12" fill="white" text-anchor="middle">忠誠之路</text>
+    <text x="0" y="30" font-family="Microsoft JhengHei" font-size="10" fill="#e6e6e6" text-anchor="middle">效忠・獻禮・請願</text>
+    <!-- 小圖示：皇冠 -->
+    <path d="M-12,45 L12,45 L18,50 L6,55 L0,50 L-6,55 L-18,50 Z" fill="#ffd700"/>
+  </g>
+
+  <!-- 第二周目 - 謀反之路（右下） -->
+  <g transform="translate(650, 370)">
+    <circle cx="0" cy="0" r="60" fill="rgba(255,0,0,0.1)" stroke="#ff4444" stroke-width="1.5"/>
+    <text x="0" y="-15" font-family="Microsoft JhengHei" font-size="14" fill="#ff4444" text-anchor="middle">第二周目</text>
+    <text x="0" y="10" font-family="Microsoft JhengHei" font-size="12" fill="white" text-anchor="middle">謀反之路</text>
+    <text x="0" y="30" font-family="Microsoft JhengHei" font-size="10" fill="#e6e6e6" text-anchor="middle">密謀・聯盟・暗殺</text>
+    <!-- 小圖示：匕首 -->
+    <path d="M-9,45 L9,55 L12,52 L0,42 Z" fill="#ff4444"/>
+  </g>
+
+  <!-- 第三周目 - 逃亡之路（左下） -->
+  <g transform="translate(310, 370)">
+    <circle cx="0" cy="0" r="60" fill="rgba(0,191,255,0.1)" stroke="#00bfff" stroke-width="1.5"/>
+    <text x="0" y="-15" font-family="Microsoft JhengHei" font-size="14" fill="#00bfff" text-anchor="middle">第三周目</text>
+    <text x="0" y="10" font-family="Microsoft JhengHei" font-size="12" fill="white" text-anchor="middle">逃亡之路</text>
+    <text x="0" y="30" font-family="Microsoft JhengHei" font-size="10" fill="#e6e6e6" text-anchor="middle">逃脫・偽裝・交易</text>
+    <!-- 小圖示：馬 -->
+    <path d="M-12,45 C-6,40 6,40 12,45 L6,55 L-6,55 Z" fill="#00bfff"/>
+  </g>
+
+  <!-- 第四周目 - 愛情之路（左上） -->
+  <g transform="translate(310, 170)">
+    <circle cx="0" cy="0" r="60" fill="rgba(255,105,180,0.1)" stroke="#ff69b4" stroke-width="1.5"/>
+    <text x="0" y="-15" font-family="Microsoft JhengHei" font-size="14" fill="#ff69b4" text-anchor="middle">第四周目</text>
+    <text x="0" y="10" font-family="Microsoft JhengHei" font-size="12" fill="white" text-anchor="middle">愛情之路</text>
+    <text x="0" y="30" font-family="Microsoft JhengHei" font-size="10" fill="#e6e6e6" text-anchor="middle">邂逅・贈禮・告白</text>
+    <!-- 小圖示：心形 -->
+    <path d="M0,55 C-12,45 -12,35 0,40 C12,35 12,45 0,55" fill="#ff69b4"/>
+  </g>
+
+  <!-- 第五周目 - 隱藏結局（上方） -->
+  <g transform="translate(480, 100)">
+    <circle cx="0" cy="0" r="60" fill="rgba(147,112,219,0.1)" stroke="#9370db" stroke-width="1.5"/>
+    <text x="0" y="-15" font-family="Microsoft JhengHei" font-size="14" fill="#9370db" text-anchor="middle">第五周目</text>
+    <text x="0" y="10" font-family="Microsoft JhengHei" font-size="12" fill="white" text-anchor="middle">隱藏結局之路</text>
+    <text x="0" y="30" font-family="Microsoft JhengHei" font-size="10" fill="#e6e6e6" text-anchor="middle">探索・解謎・啟示</text>
+    <!-- 小圖示：書卷 -->
+    <path d="M-12,45 Q0,40 12,45 L12,55 Q0,50 -12,55 Z" fill="#9370db"/>
+  </g>
+
+  <!-- 第六周目 - 終極結局（下方） -->
+  <g transform="translate(480, 440)">
+    <circle cx="0" cy="0" r="70" fill="rgba(255,215,0,0.2)" stroke="#ffd700" stroke-width="2"/>
+    <text x="0" y="-20" font-family="Microsoft JhengHei" font-size="16" fill="#ffd700" text-anchor="middle">第六周目</text>
+    <text x="0" y="5" font-family="Microsoft JhengHei" font-size="14" fill="white" text-anchor="middle">命運超越者</text>
+    <text x="0" y="25" font-family="Microsoft JhengHei" font-size="11" fill="#e6e6e6" text-anchor="middle">選擇・犧牲・救贖</text>
+    <!-- 小圖示：命運之輪 -->
+    <circle cx="0" cy="45" r="12" fill="none" stroke="#ffd700" stroke-width="1.5"/>
+    <path d="M-8,45 L8,45 M0,37 L0,53" stroke="#ffd700" stroke-width="1.5"/>
+  </g>
+
+  <!-- 連接線 -->
+  <g stroke="#ffd700" stroke-width="1.5" opacity="0.5" marker-end="url(#arrowhead)">
+    <!-- 第一周目到第二周目 -->
+    <path d="M650,230 Q670,270 650,310" fill="none"/>
+    <!-- 第二周目到第三周目 -->
+    <path d="M590,370 L370,370" fill="none"/>
+    <!-- 第三周目到第四周目 -->
+    <path d="M310,310 Q290,270 310,230" fill="none"/>
+    <!-- 第四周目到第五周目 -->
+    <path d="M340,170 L420,130" fill="none"/>
+    <!-- 所有路線到終極結局 -->
+    <path d="M480,160 L480,370" fill="none"/>
+  </g>
+
+  <!-- 說明文字 -->
+  <g transform="translate(80, 480)">
+    <rect x="0" y="0" width="800" height="50" rx="5" fill="rgba(255,255,255,0.1)"/>
+    <text x="10" y="20" font-family="Microsoft JhengHei" font-size="12" fill="white">
+      • 每個周目都需要完整遊玩才能解鎖下一個路線
+    </text>
+    <text x="10" y="40" font-family="Microsoft JhengHei" font-size="12" fill="white">
+      • 終極結局需要收集前五個結局的關鍵道具
+    </text>
+  </g>
+</svg>
