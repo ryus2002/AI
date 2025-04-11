@@ -1,0 +1,90 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c3e50" />
+      <stop offset="100%" stop-color="#1a1c20" />
+    </linearGradient>
+    <linearGradient id="title-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e6b980" />
+      <stop offset="100%" stop-color="#eacda3" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 主背景 -->
+  <rect width="800" height="600" fill="url(#bg-gradient)" />
+  
+  <!-- 裝飾元素 -->
+  <path d="M0,50 Q200,20 400,50 T800,50" stroke="#e6b980" stroke-width="2" fill="none" opacity="0.3" />
+  <path d="M0,550 Q200,580 400,550 T800,550" stroke="#e6b980" stroke-width="2" fill="none" opacity="0.3" />
+  
+  <!-- 標題 -->
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="url(#title-gradient)">目錄</text>
+  
+  <!-- 左側目錄項目 -->
+  <g font-family="Arial, sans-serif" fill="#e6b980">
+    <!-- 項目1 -->
+    <circle cx="180" cy="150" r="15" fill="#e74c3c" />
+    <text x="180" y="156" font-size="18" text-anchor="middle" fill="white">1</text>
+    <text x="220" y="156" font-size="22" font-weight="bold">遊戲概述</text>
+    
+    <!-- 項目2 -->
+    <circle cx="180" cy="200" r="15" fill="#e74c3c" />
+    <text x="180" y="206" font-size="18" text-anchor="middle" fill="white">2</text>
+    <text x="220" y="206" font-size="22" font-weight="bold">Steam熱門原因分析</text>
+    
+    <!-- 項目3 -->
+    <circle cx="180" cy="250" r="15" fill="#e74c3c" />
+    <text x="180" y="256" font-size="18" text-anchor="middle" fill="white">3</text>
+    <text x="220" y="256" font-size="22" font-weight="bold">基礎操作指南</text>
+    
+    <!-- 項目4 -->
+    <circle cx="180" cy="300" r="15" fill="#e74c3c" />
+    <text x="180" y="306" font-size="18" text-anchor="middle" fill="white">4</text>
+    <text x="220" y="306" font-size="22" font-weight="bold">結局攻略概覽</text>
+  </g>
+  
+  <!-- 右側目錄項目 -->
+  <g font-family="Arial, sans-serif" fill="#e6b980">
+    <!-- 項目5 -->
+    <circle cx="450" cy="150" r="15" fill="#e74c3c" />
+    <text x="450" y="156" font-size="18" text-anchor="middle" fill="white">5</text>
+    <text x="490" y="156" font-size="22" font-weight="bold">多周目解鎖全部結局</text>
+    
+    <!-- 項目6 -->
+    <circle cx="450" cy="200" r="15" fill="#e74c3c" />
+    <text x="450" y="206" font-size="18" text-anchor="middle" fill="white">6</text>
+    <text x="490" y="206" font-size="22" font-weight="bold">進階策略建議</text>
+    
+    <!-- 項目7 -->
+    <circle cx="450" cy="250" r="15" fill="#e74c3c" />
+    <text x="450" y="256" font-size="18" text-anchor="middle" fill="white">7</text>
+    <text x="490" y="256" font-size="22" font-weight="bold">新手常見問題解答</text>
+    
+    <!-- 項目8 -->
+    <circle cx="450" cy="300" r="15" fill="#e74c3c" />
+    <text x="450" y="306" font-size="18" text-anchor="middle" fill="white">8</text>
+    <text x="490" y="306" font-size="22" font-weight="bold">結語與參考資源</text>
+  </g>
+  
+  <!-- 裝飾線 -->
+  <line x1="150" y1="350" x2="650" y2="350" stroke="#e6b980" stroke-width="2" opacity="0.5" />
+  
+  <!-- 底部說明 -->
+  <text x="400" y="400" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#e6b980">探索《蘇丹的遊戲》的多重結局與生存策略</text>
+  
+  <!-- 裝飾圖案 -->
+  <g opacity="0.3">
+    <!-- 左下角裝飾 -->
+    <path d="M100,450 C120,430 140,430 160,450 C180,470 200,470 220,450" stroke="#e6b980" stroke-width="3" fill="none" />
+    <path d="M100,480 C120,460 140,460 160,480 C180,500 200,500 220,480" stroke="#e6b980" stroke-width="3" fill="none" />
+    
+    <!-- 右下角裝飾 -->
+    <path d="M580,450 C600,430 620,430 640,450 C660,470 680,470 700,450" stroke="#e6b980" stroke-width="3" fill="none" />
+    <path d="M580,480 C600,460 620,460 640,480 C660,500 680,500 700,480" stroke="#e6b980" stroke-width="3" fill="none" />
+  </g>
+  
+  <!-- 卡牌圖示 -->
+  <rect x="120" y="500" width="60" height="80" rx="5" ry="5" fill="#34495e" stroke="#e6b980" stroke-width="2" transform="rotate(-10,120,500)" />
+  <rect x="620" y="500" width="60" height="80" rx="5" ry="5" fill="#34495e" stroke="#e6b980" stroke-width="2" transform="rotate(10,620,500)" />
+</svg>
